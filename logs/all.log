@@ -2485,3 +2485,7 @@ AttributeError: 'HttpRunner' object has no attribute 'summary'
 2020-04-25 01:35:51,498 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 29773
 2020-04-25 01:35:51,778 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
 2020-04-25 01:35:57,732 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_batch_test/ HTTP/1.1" 200 55920
+2020-04-25 01:57:46,540 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_batch_test/ HTTP/1.1" 200 55967
+2020-04-25 01:57:46,658 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 01:57:46,662 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-25 01:58:59,277 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
