@@ -1251,3 +1251,5 @@ Traceback (most recent call last):
   File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 280, in run_batch_test
     runner._summary = timestamp_to_datetime(runner.summary,type=False)
 AttributeError: 'HttpRunner' object has no attribute 'summary'
+2020-04-25 01:34:50,646 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- get_baidu_fail用例添加成功: {'test': {'request': {'url': '////', 'method': 'POST'}, 'name': 'get_baidu_fail'}}
+2020-04-25 01:35:51,241 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- get_baidu_fail用例更新成功: {'test': {'request': {'url': '@!#$', 'method': 'POST'}, 'name': 'get_baidu_fail'}}
