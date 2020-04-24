@@ -277,8 +277,8 @@ def run_batch_test(request):
         runner.run(testcase_dir_path)
 
         shutil.rmtree(testcase_dir_path)
-        runner._summary = timestamp_to_datetime(runner.summary,type=False)
-
+        runner._summary = timestamp_to_datetime(runner._summary,type=False)
+        print(runner._summary)
         return render_to_response('report_template.html', runner._summary)
 
 

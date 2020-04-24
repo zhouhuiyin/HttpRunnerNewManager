@@ -172,17 +172,17 @@
                             </div>
                             <div class='block text-small'>
                             <span class='tooltipped' data-position='top'><span
-                                    class='strong'>{{ stat.testcases.success }}</span> test(s) passed</span>
+                                    class='strong'>{{ stat.testcases.success }}</span>&nbsp;passed&nbsp;</span>
                                 <span class='tooltipped' data-position='top'><span
-                                        class='strong'>{{ stat.testcases.fail }}</span> test(s) failed</span>
+                                        class='strong'>{{ stat.testcases.fail }}</span>&nbsp;failed</span>
                             </div>
                             <div class='block text-small'>
                             <span class='strong tooltipped' data-position='top'
                             >{{ stat.teststeps.errors }}</span>
-                                test(s) errored
+                                 errored&nbsp;
                                 <span class='strong tooltipped' data-position='top'
                                 >{{ stat.teststeps.skipped }}</span>
-                                test(s) skipped
+                                 skipped
                             </div>
                         </div>
                     </div>
@@ -194,12 +194,12 @@
                                 <canvas id='child-analysis' width='100' height='80'></canvas>
                             </div>
                             <div class='block text-small'>
-                            <span id="pass_suites" class='tooltipped' data-position='top'>
-                            </span>
+                            <span id="pass_suites" class='strong tooltipped' data-position='top'><span
+                                        class='strong'>{{ stat.teststeps.successes }}</span> </span>  passed
                             </div>
                             <div class='block text-small'>
-                                <span id="fail_suites" class='strong tooltipped' data-position='top'><span
-                                        class='strong'>{{ stat.teststeps.failures }}</span> suite(s) failed</span> 
+                            <span id="fail_suites" class='strong tooltipped' data-position='top'><span
+                                        class='strong'>{{ stat.teststeps.failures }}</span> </span>  failed
                             </div>
                         </div>
                     </div>
@@ -244,10 +244,10 @@
                                 <span class='label start-time'>{{ test_suite_summary.time.start_at }}</span>
                                 <span class='label end-time'>{{ test_suite_summary.time.duration|floatformat:3 }} seconds</span>
                             </div>
-                            <div class='test-desc'>Pass: {{ test_suite_summary.stat.successes }} ;
-                                Fail: {{ test_suite_summary.stat.failures }} ;
-                                Error: {{ test_suite_summary.stat.errors }}
-                                Skip: {{ test_suite_summary.stat.skipped }} ;
+                            <div class='test-desc'>Pass: {{ test_suite_summary.stat.successes }} &nbsp;
+                                Fail: {{ test_suite_summary.stat.failures }} &nbsp;
+                                Error: {{ test_suite_summary.stat.errors }} &nbsp;
+                                Skip: {{ test_suite_summary.stat.skipped }} 
                             </div>
                             <div class='test-attributes'>
                                 <div class='category-list'>
@@ -288,7 +288,7 @@
                                 <div class='collapsible-body'>
                                     <div class='category-list right'>
                                         <span class='category label white-text'>{{ test_suite_summary.name }}</span>
-                                        <span class='category label white-text'>{{ record.name }}</span>
+                                        <!-- <span class='category label white-text'>{{ record.name }}</span> -->
                                     </div>
                                     <div class='node-steps'>
                                         <table class='bordered table-results'>
@@ -737,7 +737,7 @@
         exceptionsGrandChild: 0,
     };
 
-    document.getElementById('pass_suites').innerHTML = "<span class='strong'>" + test_suite_success + "</span> suite(s) passed";//找到id为'myId'的标签内插入html变量的值
+    document.getElementById('pass_suites').innerHTML = "<span class='strong'>" + test_suite_success + "</span>";//找到id为'myId'的标签内插入html变量的值
     document.getElementById('fail_suites').innerText = {{ details|length }} -test_suite_success;//找到id为'myId'的标签替换它的内容为html的值
 
 </script>

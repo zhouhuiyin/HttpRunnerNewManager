@@ -1233,3 +1233,21 @@ Traceback (most recent call last):
   File "D:\worker\httprunner\HttpRunnerManager-master\ApiManager\views.py", line 238, in run_test
     runner._summary = timestamp_to_datetime(runner._summary, type=False)
 AttributeError: 'HttpRunner' object has no attribute '_summary'
+2020-04-24 22:28:44,187 [HttpRunnerManager:35] [operation:add_register_data] [INFO]- 新增用户：ApiManager.UserInfo.objects
+2020-04-24 22:28:52,648 [HttpRunnerManager:55] [views:login] [INFO]- chenjinsong 登录成功
+2020-04-24 22:45:12,032 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- get_baidu用例添加成功: {'test': {'request': {'url': '', 'method': 'GET', 'data': {'hello': 'word'}}, 'name': 'get_baidu'}}
+2020-04-24 22:48:09,568 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_batch_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 280, in run_batch_test
+    runner._summary = timestamp_to_datetime(runner.summary,type=False)
+AttributeError: 'HttpRunner' object has no attribute 'summary'
