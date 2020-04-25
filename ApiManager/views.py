@@ -236,6 +236,7 @@ def run_test(request):
         runner.run(testcase_dir_path)
         shutil.rmtree(testcase_dir_path)
         runner._summary = timestamp_to_datetime(runner._summary, type=False)
+        runner._summary['base_url'] = base_url
         print(runner._summary)
         return render_to_response('report_template.html', runner._summary)
 
@@ -278,6 +279,7 @@ def run_batch_test(request):
 
         shutil.rmtree(testcase_dir_path)
         runner._summary = timestamp_to_datetime(runner._summary,type=False)
+        runner._summary['base_url'] = base_url
         print(runner._summary)
         return render_to_response('report_template.html', runner._summary)
 

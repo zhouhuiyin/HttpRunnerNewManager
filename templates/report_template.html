@@ -14,7 +14,7 @@
 
     <link href='http://extentreports.com/resx/dist/css/extent.css' type='text/css' rel='stylesheet'/>
 
-    <title>{{ time.start_datetime }} - TestReport</title>
+    <title>TestReport - {{ time.start_datetime }} </title>
 
     <style type='text/css'>
         .node.level-1 ul {
@@ -228,7 +228,7 @@
 							<span class='test-name'>{{ record.name }}</span>
 								{% for url in record.meta_datas.data %}
 									{% if forloop.first %}
-							<span class='test-time'>url: {{ url.request.url }}</span>
+							<span class='test-time'>{{ url.request.method|upper }}&nbsp;&nbsp;{{ url.request.url }}</span>
 
 
                             {% if test_suite_summary.success == True %}
@@ -386,13 +386,10 @@
                                                 <td class='timestamp'>Statistics</td>
                                                 <td class='step-details'>
                                                     <div>
-                                                        content_size(bytes): {{ record.meta_data.response.content_size }}
+                                                        content_size(bytes): {{ record.meta_datas.stat.content_size }}
                                                     </div>
                                                     <div>
-                                                        response_time(ms): {{ record.meta_data.response.response_time_ms }}
-                                                    </div>
-                                                    <div>
-                                                        elapsed(ms): {{ record.meta_data.response.elapsed_ms }}
+                                                        elapsed(ms): {{ record.meta_datas.stat.elapsed_ms }}
                                                     </div>
                                                 </td>
                                             </tr>
