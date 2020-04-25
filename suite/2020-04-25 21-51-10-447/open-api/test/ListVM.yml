@@ -1,0 +1,21 @@
+-   config:
+        name: ListVM
+        request:
+            base_url: https://cn-east-1.api.yovole.com
+-   test:
+        name: ListVM
+        request:
+            headers:
+                Content-Type: application/json;charset=UTF-8
+                x-client-meta: java-sdk-open-api/v1
+                x-ycs-requestid: ${REQUESTID}
+                x-ycs-security-authorization: ${get_signature(${ak},${sk},{})}
+                x-ycs-timestamp: ${TIMESTAMP}
+            json:
+                projectId: ${projectid}
+            method: POST
+            url: https://cn-east-1.api.yovole.com/v1/vm/list
+        variables:
+        -   projectid: 8a83a00d70c8234b0170cc46de9e004d
+        -   ak: 8e43f143-dd06-41ad-aa49-de658177a89f
+        -   sk: 24bd412d-55c5-4ea1-bfda-70866e889f85

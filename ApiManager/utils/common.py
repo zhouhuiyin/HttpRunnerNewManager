@@ -42,6 +42,9 @@ def type_change(type, value):
             value = True
         else:
             return 'exception'
+    #新增字典类型的变量
+    if type == 'dict':
+        value = eval(value)
     return value
 
 

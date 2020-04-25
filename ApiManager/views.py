@@ -117,6 +117,7 @@ def index(request):
         'account': request.session["now_account"],
         'total': total
     }
+    print(manage_info)
 
     init_filter_session(request)
     return render_to_response('index.html', manage_info)

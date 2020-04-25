@@ -2728,3 +2728,264 @@ KeyError: 'new_account'
 2020-04-25 17:03:02,522 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_batch_test/ HTTP/1.1" 200 55444
 2020-04-25 17:03:02,605 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
 2020-04-25 17:03:02,614 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-25 19:01:45,691 [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 18302
+2020-04-25 19:04:29,782 [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 18302
+2020-04-25 19:04:30,634 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 19:04:30,903 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-25 19:05:24,647 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 19:05:33,579 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13693
+2020-04-25 19:05:44,424 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14466
+2020-04-25 19:22:03,726 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-25 19:22:05,467 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2020-04-25 19:22:05,835 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-25 19:24:27,437 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-25 19:24:33,184 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_case/ HTTP/1.1" 200 34145
+2020-04-25 19:24:35,764 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 7
+2020-04-25 19:24:37,409 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 55
+2020-04-25 19:24:37,422 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 19:25:05,405 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 29773
+2020-04-25 19:25:05,421 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_case/ HTTP/1.1" 200 34145
+2020-04-25 19:25:05,442 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/test_list/1/ HTTP/1.1" 500 59
+2020-04-25 19:27:50,793 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13693
+2020-04-25 19:27:53,718 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14466
+2020-04-25 19:36:55,015 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 7
+2020-04-25 19:37:02,088 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 17
+2020-04-25 19:37:02,577 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 32253
+2020-04-25 19:37:02,915 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 19:37:06,556 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 41133
+2020-04-25 19:39:35,595 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-25 19:39:35,840 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 32253
+2020-04-25 19:47:35,801 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 40991
+2020-04-25 19:48:32,085 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_case/ HTTP/1.1" 200 34145
+2020-04-25 20:03:43,348 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 32253
+2020-04-25 20:07:38,214 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_case/ HTTP/1.1" 200 34145
+2020-04-25 20:08:51,196 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/config_list/1/ HTTP/1.1" 200 19230
+2020-04-25 20:08:51,499 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 20:08:53,735 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 32253
+2020-04-25 20:08:54,010 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 20:08:55,874 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/3/ HTTP/1.1" 200 36184
+2020-04-25 20:09:34,856 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-25 20:09:35,144 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 32253
+2020-04-25 20:09:35,465 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 20:09:51,967 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_batch_test/ HTTP/1.1" 200 34320
+2020-04-25 20:10:08,046 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 20:10:13,590 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_batch_test/ HTTP/1.1" 200 34319
+2020-04-25 20:10:24,615 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 20:10:26,929 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_batch_test/ HTTP/1.1" 200 34319
+2020-04-25 20:10:33,033 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 20:10:55,079 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_batch_test/ HTTP/1.1" 200 34319
+2020-04-25 20:10:57,645 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 20:11:20,704 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_batch_test/ HTTP/1.1" 200 34319
+2020-04-25 20:11:43,153 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 20:11:46,365 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 37764
+2020-04-25 20:12:50,532 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 32253
+2020-04-25 20:12:51,140 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 20:12:55,697 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_batch_test/ HTTP/1.1" 200 28502
+2020-04-25 20:12:57,232 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-25 20:12:57,234 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/edit_case/ HTTP/1.1" 500 59
+2020-04-25 20:13:21,392 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 20:13:24,425 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_batch_test/ HTTP/1.1" 200 28500
+2020-04-25 20:14:00,399 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 20:14:02,691 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_batch_test/ HTTP/1.1" 200 28500
+2020-04-25 20:14:26,065 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 20:14:35,317 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 32253
+2020-04-25 20:14:35,609 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 20:14:43,051 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_batch_test/ HTTP/1.1" 200 28499
+2020-04-25 20:15:09,109 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 20:24:50,052 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_case/ HTTP/1.1" 200 34145
+2020-04-25 20:56:16,268 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 7
+2020-04-25 20:56:18,953 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 17
+2020-04-25 20:56:19,479 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34736
+2020-04-25 20:56:19,906 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 20:57:15,747 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_batch_test/ HTTP/1.1" 200 28502
+2020-04-25 20:57:15,769 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_batch_test/ HTTP/1.1" 500 59
+2020-04-25 20:57:15,791 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/5/ HTTP/1.1" 200 39264
+2020-04-25 21:02:14,684 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34736
+2020-04-25 21:02:15,141 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 21:02:17,341 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_case/ HTTP/1.1" 200 34145
+2020-04-25 21:06:51,361 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_case/ HTTP/1.1" 200 34145
+2020-04-25 21:06:58,091 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_module/ HTTP/1.1" 200 16138
+2020-04-25 21:07:04,988 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34736
+2020-04-25 21:07:05,854 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 21:07:07,224 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 40991
+2020-04-25 21:08:00,438 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13693
+2020-04-25 21:08:02,965 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14466
+2020-04-25 21:09:04,964 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-25 21:09:06,676 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2020-04-25 21:09:06,989 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-25 21:09:19,466 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34736
+2020-04-25 21:09:19,822 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 21:09:26,327 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 40991
+2020-04-25 21:20:38,036 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/debugtalk/ HTTP/1.1" 302 0
+2020-04-25 21:20:38,163 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13693
+2020-04-25 21:20:42,131 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14850
+2020-04-25 21:20:55,683 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14850
+2020-04-25 21:22:00,453 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/debugtalk/ HTTP/1.1" 302 0
+2020-04-25 21:22:00,583 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13693
+2020-04-25 21:22:02,378 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14883
+2020-04-25 21:22:07,986 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14883
+2020-04-25 21:22:30,738 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14883
+2020-04-25 21:22:38,686 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_case/ HTTP/1.1" 200 34145
+2020-04-25 21:22:44,870 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34736
+2020-04-25 21:22:45,148 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 21:22:47,604 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 40991
+2020-04-25 21:25:16,554 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-25 21:25:16,870 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34736
+2020-04-25 21:25:17,449 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 21:26:36,588 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 44196
+2020-04-25 21:26:47,434 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34736
+2020-04-25 21:26:47,770 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 21:27:12,266 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_batch_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 279, in run_batch_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-25 21:27:12,476 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_batch_test/ HTTP/1.1" 500 104337
+2020-04-25 21:28:07,768 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 21:28:32,970 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 21:28:36,861 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-25 21:28:36,966 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 101088
+2020-04-25 21:31:19,524 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 21:31:24,774 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-25 21:31:24,814 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 101332
+2020-04-25 21:31:29,530 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 21:31:30,590 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 44196
+2020-04-25 21:34:03,805 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34736
+2020-04-25 21:34:04,115 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 21:45:14,993 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 44196
+2020-04-25 21:47:25,130 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-25 21:47:26,704 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 103881
+2020-04-25 21:47:26,711 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 59
+2020-04-25 21:48:22,852 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34736
+2020-04-25 21:48:23,158 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 21:48:35,648 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-25 21:48:35,950 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 104125
+2020-04-25 21:49:37,904 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34736
+2020-04-25 21:49:38,266 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 21:49:40,389 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 44196
+2020-04-25 21:51:04,966 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-25 21:51:05,237 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34736
+2020-04-25 21:51:05,647 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 21:51:10,555 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-25 21:51:10,716 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 104341
+2020-04-25 21:51:16,622 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 21:51:22,700 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 44182
+2020-04-25 21:51:35,948 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 21:51:37,354 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13693
+2020-04-25 21:51:39,152 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14883

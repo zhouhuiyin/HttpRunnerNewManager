@@ -1345,3 +1345,138 @@ Traceback (most recent call last):
     return self._session[key]
 KeyError: 'new_account'
 2020-04-25 16:16:59,308 [HttpRunnerManager:55] [views:login] [INFO]- chenjinsong 登录成功
+2020-04-25 19:22:05,366 [HttpRunnerManager:55] [views:login] [INFO]- chenjinsong 登录成功
+2020-04-25 19:37:02,088 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- ListVM用例添加成功: {'test': {'request': {'url': '/v1/vm/list', 'method': 'POST', 'json': {'projectId': '${projectid}'}, 'headers': {'x-client-meta': 'java-sdk-open-api/v1', 'Content-Type': 'application/json;charset=UTF-8', 'x-ycs-security-authorization': 'a', 'x-ycs-timestamp': 'b', 'x-ycs-requestid': 'c'}}, 'name': 'ListVM', 'variables': [{'projectid': '8a83a00d70c8234b0170cc46de9e004d'}], 'parameters': [{}]}}
+2020-04-25 19:39:35,594 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- ListVM用例更新成功: {'test': {'request': {'url': '/v1/vm/list', 'method': 'POST', 'json': {'projectId': '${projectid}'}, 'headers': {'x-client-meta': 'java-sdk-open-api/v1', 'Content-Type': 'application/json;charset=UTF-8', 'x-ycs-security-authorization': 'a', 'x-ycs-timestamp': 'b', 'x-ycs-requestid': 'c'}}, 'name': 'ListVM', 'variables': [{'projectid': '8a83a00d70c8234b0170cc46de9e004d'}]}}
+2020-04-25 20:09:34,855 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- get_baidu_fail用例更新成功: {'test': {'request': {'url': '@!#$', 'method': 'POST'}, 'name': 'get_baidu_fail', 'variables': [{'first_vatiable': 'helloword'}]}}
+2020-04-25 20:12:57,231 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- get_baidu用例更新成功: {'test': {'request': {'url': '', 'method': 'GET', 'data': {'key1': '${first_vatiable}'}}, 'name': 'get_baidu', 'variables': [{'first_vatiable': 'helloword'}]}}
+2020-04-25 20:56:18,951 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- testcase2用例添加成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': 'testcase2', 'variables': [{'first_vatiable': 'helloword'}, {'num': 1}]}}
+2020-04-25 21:09:06,636 [HttpRunnerManager:55] [views:login] [INFO]- chenjinsong 登录成功
+2020-04-25 21:25:16,553 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- ListVM用例更新成功: {'test': {'request': {'url': '/v1/vm/list', 'method': 'POST', 'json': {'projectId': '${projectid}'}, 'headers': {'x-client-meta': 'java-sdk-open-api/v1', 'Content-Type': 'application/json;charset=UTF-8', 'x-ycs-security-authorization': '${get_signature(${ak},${sk},${rerquest_body})}', 'x-ycs-timestamp': '${TIMESTAMP}', 'x-ycs-requestid': '${REQUESTID}'}}, 'name': 'ListVM', 'variables': [{'projectid': '8a83a00d70c8234b0170cc46de9e004d'}, {'ak': '8e43f143-dd06-41ad-aa49-de658177a89f'}, {'sk': '24bd412d-55c5-4ea1-bfda-70866e889f85'}]}}
+2020-04-25 21:27:12,266 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_batch_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 279, in run_batch_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-25 21:28:36,861 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-25 21:31:24,774 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-25 21:47:25,130 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-25 21:48:35,648 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-25 21:51:04,965 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- ListVM用例更新成功: {'test': {'request': {'url': '/v1/vm/list', 'method': 'POST', 'json': {'projectId': '${projectid}'}, 'headers': {'x-client-meta': 'java-sdk-open-api/v1', 'Content-Type': 'application/json;charset=UTF-8', 'x-ycs-security-authorization': '${get_signature(${ak},${sk},{})}', 'x-ycs-timestamp': '${TIMESTAMP}', 'x-ycs-requestid': '${REQUESTID}'}}, 'name': 'ListVM', 'variables': [{'projectid': '8a83a00d70c8234b0170cc46de9e004d'}, {'ak': '8e43f143-dd06-41ad-aa49-de658177a89f'}, {'sk': '24bd412d-55c5-4ea1-bfda-70866e889f85'}]}}
+2020-04-25 21:51:10,555 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
