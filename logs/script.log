@@ -1253,3 +1253,94 @@ Traceback (most recent call last):
 AttributeError: 'HttpRunner' object has no attribute 'summary'
 2020-04-25 01:34:50,646 [HttpRunnerManager:154] [operation:add_case_data] [INFO]- get_baidu_fail用例添加成功: {'test': {'request': {'url': '////', 'method': 'POST'}, 'name': 'get_baidu_fail'}}
 2020-04-25 01:35:51,241 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- get_baidu_fail用例更新成功: {'test': {'request': {'url': '@!#$', 'method': 'POST'}, 'name': 'get_baidu_fail'}}
+2020-04-25 10:50:14,096 [HttpRunnerManager:55] [views:login] [INFO]- chenjinsong 登录成功
+2020-04-25 12:08:58,953 [HttpRunnerManager:55] [views:login] [INFO]- chenjinsong 登录成功
+2020-04-25 12:22:46,383 [HttpRunnerManager:89] [views:log_out] [INFO]- chenjinsong退出
+2020-04-25 12:34:58,734 [HttpRunnerManager:55] [views:login] [INFO]- chenjinsong 登录成功
+2020-04-25 12:41:18,778 [HttpRunnerManager:55] [views:login] [INFO]- chenjinsong 登录成功
+2020-04-25 13:03:56,834 [HttpRunnerManager:55] [views:login] [INFO]- chenjinsong 登录成功
+2020-04-25 13:04:00,274 [HttpRunnerManager:93] [views:log_out] [INFO]- chenjinsong退出
+2020-04-25 13:04:55,605 [HttpRunnerManager:29] [operation:add_register_data] [DEBUG]- chenjinsong 已被其他用户注册
+2020-04-25 13:13:03,895 [HttpRunnerManager:35] [operation:add_register_data] [INFO]- 新增用户：ApiManager.UserInfo.objects
+2020-04-25 13:13:03,903 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 95, in register
+    User.objects.create_user(username=username, password=password)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\contrib\auth\models.py", line 150, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\contrib\auth\models.py", line 139, in _create_user
+    raise ValueError('The given username must be set')
+ValueError: The given username must be set
+2020-04-25 13:14:07,486 [HttpRunnerManager:29] [operation:add_register_data] [DEBUG]- chenjinsong1 已被其他用户注册
+2020-04-25 13:14:07,494 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 95, in register
+    User.objects.create_user(username=username, password=password)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\contrib\auth\models.py", line 150, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\contrib\auth\models.py", line 139, in _create_user
+    raise ValueError('The given username must be set')
+ValueError: The given username must be set
+2020-04-25 13:14:18,146 [HttpRunnerManager:29] [operation:add_register_data] [DEBUG]- chenjinsong1 已被其他用户注册
+2020-04-25 13:14:27,813 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 95, in register
+    User.objects.create_user(username=username, password=password)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\contrib\auth\models.py", line 150, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\contrib\auth\models.py", line 139, in _create_user
+    raise ValueError('The given username must be set')
+ValueError: The given username must be set
+2020-04-25 13:18:17,815 [HttpRunnerManager:29] [operation:add_register_data] [DEBUG]- chenjinsong1 已被其他用户注册
+2020-04-25 13:20:23,406 [HttpRunnerManager:64] [views:login] [INFO]- chenjinsong1 登录成功
+2020-04-25 13:24:43,484 [HttpRunnerManager:112] [views:log_out] [INFO]- chenjinsong1退出
+2020-04-25 13:25:34,942 [HttpRunnerManager:64] [views:login] [INFO]- chenjinsong1 登录成功
+2020-04-25 13:50:09,187 [HttpRunnerManager:112] [views:log_out] [INFO]- chenjinsong1退出
+2020-04-25 13:50:27,100 [HttpRunnerManager:64] [views:login] [INFO]- chenjinsong 登录成功
+2020-04-25 13:55:52,420 [HttpRunnerManager:112] [views:log_out] [INFO]- chenjinsong退出
+2020-04-25 13:57:08,890 [HttpRunnerManager:64] [views:login] [INFO]- chenjinsong 登录成功
+2020-04-25 13:57:13,458 [HttpRunnerManager:112] [views:log_out] [INFO]- chenjinsong退出
+2020-04-25 13:57:32,885 [HttpRunnerManager:64] [views:login] [INFO]- chenjinsong1 登录成功
+2020-04-25 14:01:40,148 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/report_list/1/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 41, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 548, in report_list
+    filter_query = set_filter_session(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\utils\common.py", line 468, in set_filter_session
+    'user': request.session['new_account'],
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+KeyError: 'new_account'

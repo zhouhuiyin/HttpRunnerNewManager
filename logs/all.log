@@ -2489,3 +2489,210 @@ AttributeError: 'HttpRunner' object has no attribute 'summary'
 2020-04-25 01:57:46,658 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
 2020-04-25 01:57:46,662 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
 2020-04-25 01:58:59,277 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 02:01:07,983 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_batch_test/ HTTP/1.1" 200 34496
+2020-04-25 10:37:18,881 [django.server:124] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 302 0
+2020-04-25 10:37:20,995 [django.server:124] [basehttp:log_message] [INFO]- "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1874
+2020-04-25 10:37:21,007 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/admin/css/base.css HTTP/1.1" 304 0
+2020-04-25 10:37:21,314 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+2020-04-25 10:37:21,316 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/admin/css/login.css HTTP/1.1" 304 0
+2020-04-25 10:49:29,222 [django.server:124] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 302 0
+2020-04-25 10:49:29,299 [django.server:124] [basehttp:log_message] [INFO]- "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1874
+2020-04-25 10:49:31,014 [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 302 0
+2020-04-25 10:49:31,360 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-25 10:49:42,692 [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 302 0
+2020-04-25 10:49:42,696 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-25 10:50:14,203 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2020-04-25 10:50:14,546 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-25 10:50:38,852 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-25 10:50:39,412 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 10:50:39,471 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-25 10:50:46,972 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-25 10:50:47,324 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 10:50:47,336 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-25 11:09:00,092 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 11:10:19,799 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 11:10:20,093 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 11:10:20,099 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-25 11:11:50,257 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 11:11:50,888 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 11:11:51,138 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-25 11:18:12,260 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 11:18:12,980 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 11:18:13,232 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-25 11:31:14,080 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 11:31:14,474 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 11:31:14,481 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-25 11:33:16,685 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 11:33:33,191 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 11:34:20,312 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 11:34:34,278 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 11:34:34,501 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 11:34:34,507 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-25 11:35:03,516 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 11:35:03,726 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 11:35:03,732 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-25 11:35:50,581 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 11:35:50,774 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 11:35:50,780 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-25 11:37:24,621 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 11:37:24,818 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 11:37:24,822 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-25 11:37:33,337 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 11:37:33,506 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 11:37:33,512 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-25 11:38:04,364 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 11:38:10,680 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 11:38:37,681 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 11:47:35,164 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 11:50:42,968 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 11:50:43,157 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 11:50:43,164 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-25 11:50:46,450 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 11:50:50,729 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 12:08:19,657 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 12:08:42,565 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-25 12:08:57,077 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-25 12:08:57,186 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 12:08:58,988 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2020-04-25 12:08:59,457 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-25 12:10:15,088 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-25 12:11:12,219 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-25 12:11:42,793 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-25 12:12:05,405 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-25 12:12:05,830 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 12:12:05,842 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-25 12:12:22,846 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 12:12:32,422 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 12:15:11,151 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 12:15:19,489 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 12:22:46,416 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/log_out/ HTTP/1.1" 302 0
+2020-04-25 12:22:46,429 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-25 12:22:46,480 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 12:24:06,294 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 12:24:06,300 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-25 13:03:56,878 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2020-04-25 13:03:57,211 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-25 13:03:57,774 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 13:04:00,302 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/log_out/ HTTP/1.1" 302 0
+2020-04-25 13:04:00,307 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-25 13:04:01,946 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/register/ HTTP/1.1" 200 8108
+2020-04-25 13:04:55,606 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/register/ HTTP/1.1" 200 45
+2020-04-25 13:13:03,903 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 95, in register
+    User.objects.create_user(username=username, password=password)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\contrib\auth\models.py", line 150, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\contrib\auth\models.py", line 139, in _create_user
+    raise ValueError('The given username must be set')
+ValueError: The given username must be set
+2020-04-25 13:13:04,057 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/register/ HTTP/1.1" 500 19463
+2020-04-25 13:14:07,494 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 95, in register
+    User.objects.create_user(username=username, password=password)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\contrib\auth\models.py", line 150, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\contrib\auth\models.py", line 139, in _create_user
+    raise ValueError('The given username must be set')
+ValueError: The given username must be set
+2020-04-25 13:14:07,518 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/register/ HTTP/1.1" 500 19463
+2020-04-25 13:14:27,813 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 95, in register
+    User.objects.create_user(username=username, password=password)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\contrib\auth\models.py", line 150, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\contrib\auth\models.py", line 139, in _create_user
+    raise ValueError('The given username must be set')
+ValueError: The given username must be set
+2020-04-25 13:14:27,948 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/register/ HTTP/1.1" 500 21050
+2020-04-25 13:18:37,185 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/register/ HTTP/1.1" 200 45
+2020-04-25 13:19:51,433 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-25 13:20:25,179 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2020-04-25 13:20:25,881 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18303
+2020-04-25 13:23:34,444 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14384
+2020-04-25 13:24:43,514 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/log_out/ HTTP/1.1" 302 0
+2020-04-25 13:24:43,530 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-25 13:25:41,908 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2020-04-25 13:25:42,605 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18303
+2020-04-25 13:46:55,224 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14384
+2020-04-25 13:46:57,379 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14384
+2020-04-25 13:46:57,438 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/report_list/1/ HTTP/1.1" 500 59
+2020-04-25 13:48:30,049 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14384
+2020-04-25 13:49:58,698 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14384
+2020-04-25 13:50:09,219 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/log_out/ HTTP/1.1" 302 0
+2020-04-25 13:50:09,225 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-25 13:50:27,137 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2020-04-25 13:50:27,429 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-25 13:50:30,524 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 13:51:08,458 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 13:55:48,413 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14383
+2020-04-25 13:55:52,451 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/log_out/ HTTP/1.1" 302 0
+2020-04-25 13:55:52,457 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-25 13:57:10,073 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2020-04-25 13:57:10,761 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-25 13:57:13,486 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/log_out/ HTTP/1.1" 302 0
+2020-04-25 13:57:13,676 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-25 13:57:38,497 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2020-04-25 13:57:39,173 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18303
+2020-04-25 14:01:40,148 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/report_list/1/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 41, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 548, in report_list
+    filter_query = set_filter_session(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\utils\common.py", line 468, in set_filter_session
+    'user': request.session['new_account'],
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+KeyError: 'new_account'
+2020-04-25 14:01:41,896 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/report_list/1/ HTTP/1.1" 500 92952
+2020-04-25 14:07:00,135 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14384
+2020-04-25 14:37:54,366 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14384
+2020-04-25 14:37:54,545 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 14:37:54,557 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-25 14:38:00,246 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/periodictask/1/ HTTP/1.1" 200 16269
+2020-04-25 14:38:02,292 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_task/ HTTP/1.1" 200 19235
+2020-04-25 14:38:42,586 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_task/ HTTP/1.1" 200 0
+2020-04-25 14:39:03,838 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_task/ HTTP/1.1" 200 19235
+2020-04-25 14:43:56,794 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/project_list/1/ HTTP/1.1" 200 26684
+2020-04-25 14:44:00,928 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/project_list/1/ HTTP/1.1" 200 26684
+2020-04-25 14:44:03,693 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/project_list/1/ HTTP/1.1" 200 26684
+2020-04-25 14:44:08,699 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/module_list/1/ HTTP/1.1" 200 28320
+2020-04-25 14:44:20,505 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/project_list/1/ HTTP/1.1" 200 26684
+2020-04-25 14:44:26,165 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/project_list/1/ HTTP/1.1" 200 26684
+2020-04-25 14:44:32,777 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/project_list/1/ HTTP/1.1" 200 26684
+2020-04-25 14:44:35,671 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/module_list/1/ HTTP/1.1" 200 28320
