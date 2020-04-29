@@ -2989,3 +2989,2163 @@ httprunner.exceptions.ParseTestsFailure
 2020-04-25 21:51:35,948 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
 2020-04-25 21:51:37,354 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13693
 2020-04-25 21:51:39,152 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14883
+2020-04-25 22:12:50,035 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-25 22:12:51,629 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2020-04-25 22:12:51,893 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-25 22:13:19,188 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34736
+2020-04-25 22:13:19,569 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 22:13:22,060 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 44182
+2020-04-25 22:13:28,166 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13693
+2020-04-25 22:13:31,436 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14883
+2020-04-25 22:17:05,627 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/debugtalk/ HTTP/1.1" 302 0
+2020-04-25 22:17:05,728 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13693
+2020-04-25 22:17:15,744 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34736
+2020-04-25 22:17:16,080 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 22:17:17,789 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 44182
+2020-04-25 22:17:45,673 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-25 22:17:45,923 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34736
+2020-04-25 22:17:46,238 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 22:17:49,736 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-25 22:17:49,782 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 101799
+2020-04-25 22:17:53,620 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 22:18:02,147 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 34319
+2020-04-25 22:18:04,392 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 22:18:06,064 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 44179
+2020-04-25 22:18:42,146 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 44179
+2020-04-25 22:18:42,399 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-25 22:18:42,403 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-25 22:19:35,409 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/env_list/1/ HTTP/1.1" 200 21374
+2020-04-25 22:19:44,531 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/env_set/ HTTP/1.1" 200 2
+2020-04-25 22:19:44,758 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/env_list/1/ HTTP/1.1" 200 21371
+2020-04-25 22:19:50,936 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34735
+2020-04-25 22:19:51,215 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 22:19:56,234 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-25 22:19:56,278 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 102356
+2020-04-25 22:21:13,783 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 22:21:14,835 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13693
+2020-04-25 22:21:20,926 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14959
+2020-04-25 22:23:14,559 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/debugtalk/ HTTP/1.1" 302 0
+2020-04-25 22:23:14,672 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13693
+2020-04-25 22:23:21,907 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34735
+2020-04-25 22:23:22,222 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 22:23:27,760 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-25 22:23:27,801 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 102600
+2020-04-25 22:24:12,200 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 22:24:13,598 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 44179
+2020-04-25 22:24:42,647 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-25 22:24:42,913 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34735
+2020-04-25 22:24:43,206 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 22:24:48,158 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-25 22:24:48,198 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 102868
+2020-04-25 22:25:17,964 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 22:25:21,227 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 44191
+2020-04-25 22:25:30,019 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13693
+2020-04-25 22:25:31,522 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 15051
+2020-04-25 22:26:22,828 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/debugtalk/ HTTP/1.1" 302 0
+2020-04-25 22:26:22,940 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13693
+2020-04-25 22:26:25,498 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34735
+2020-04-25 22:26:25,808 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 22:26:28,348 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 44191
+2020-04-25 22:26:47,305 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34735
+2020-04-25 22:26:47,624 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 22:26:51,312 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-25 22:26:51,354 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 103112
+2020-04-25 22:27:42,791 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 22:29:43,899 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34735
+2020-04-25 22:29:44,247 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-25 22:29:45,719 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 44191
+2020-04-25 22:31:31,097 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-25 22:31:31,352 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34735
+2020-04-25 22:31:31,656 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 14:06:50,357 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-26 14:06:53,032 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2020-04-26 14:06:53,507 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-26 14:07:00,057 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34735
+2020-04-26 14:07:00,498 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 14:07:02,851 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 44241
+2020-04-26 14:10:27,378 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-26 14:10:28,791 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2020-04-26 14:10:29,050 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-26 14:10:34,296 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13693
+2020-04-26 14:10:35,201 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-26 14:10:35,395 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34735
+2020-04-26 14:10:35,711 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 14:10:37,785 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 45191
+2020-04-26 14:10:42,962 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 15051
+2020-04-26 14:12:21,852 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/debugtalk/ HTTP/1.1" 302 0
+2020-04-26 14:12:22,131 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13693
+2020-04-26 14:12:48,886 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-26 14:12:49,186 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 34735
+2020-04-26 14:12:49,457 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 14:12:54,488 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-26 14:12:54,736 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 104390
+2020-04-26 14:13:50,392 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 15113
+2020-04-26 14:15:31,303 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/debugtalk/ HTTP/1.1" 302 0
+2020-04-26 14:15:31,806 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13693
+2020-04-26 14:16:08,077 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 15101
+2020-04-26 14:16:52,819 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 14:16:55,830 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 45137
+2020-04-26 14:19:59,268 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13693
+2020-04-26 14:20:12,894 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_project/ HTTP/1.1" 200 17471
+2020-04-26 14:20:42,174 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_project/ HTTP/1.1" 200 20
+2020-04-26 14:20:42,485 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/project_list/1/ HTTP/1.1" 200 32518
+2020-04-26 14:20:50,188 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-26 14:20:51,869 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/2/ HTTP/1.1" 200 2640
+2020-04-26 14:20:57,478 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 15101
+2020-04-26 14:21:35,309 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/debugtalk/ HTTP/1.1" 302 0
+2020-04-26 14:21:35,559 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-26 14:21:37,634 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 15043
+2020-04-26 14:22:21,767 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/debugtalk/ HTTP/1.1" 302 0
+2020-04-26 14:22:21,880 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-26 14:22:24,961 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35022
+2020-04-26 14:22:25,231 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 14:22:26,726 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 45649
+2020-04-26 14:23:13,501 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-26 14:23:13,675 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35022
+2020-04-26 14:23:13,970 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 14:23:18,192 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-26 14:23:18,327 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 104410
+2020-04-26 14:36:23,488 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 14:36:25,514 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-26 14:36:27,130 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 15043
+2020-04-26 14:36:33,710 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/debugtalk/ HTTP/1.1" 302 0
+2020-04-26 14:36:34,021 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-26 14:36:38,738 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35022
+2020-04-26 14:36:39,021 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 14:36:40,122 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 44953
+2020-04-26 14:36:42,352 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 14:36:45,563 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-26 14:36:45,700 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 104654
+2020-04-26 14:38:25,125 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 14:38:26,586 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 44953
+2020-04-26 14:41:24,307 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-26 14:41:24,566 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35022
+2020-04-26 14:41:24,862 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 14:41:28,838 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-26 14:41:28,976 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 105662
+2020-04-26 14:43:15,019 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 14:43:17,089 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 39842
+2020-04-26 14:43:48,595 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-26 14:43:48,880 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35022
+2020-04-26 14:43:49,139 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 14:43:53,926 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-26 14:43:54,056 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 103111
+2020-04-26 14:47:49,472 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 14:47:51,431 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 39842
+2020-04-26 14:47:54,558 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 14:47:56,819 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35022
+2020-04-26 14:47:57,093 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 14:55:11,548 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-26 14:55:13,386 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 102195
+2020-04-26 14:55:52,723 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 14:55:58,966 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-26 14:56:04,650 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/project_list/1/ HTTP/1.1" 200 32518
+2020-04-26 14:56:27,189 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-26 14:56:34,845 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 15044
+2020-04-26 15:08:20,701 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/debugtalk/ HTTP/1.1" 302 0
+2020-04-26 15:08:20,869 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-26 15:08:25,013 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35022
+2020-04-26 15:08:25,376 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 15:08:40,514 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-26 15:08:40,673 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 102382
+2020-04-26 15:09:03,125 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 15:09:08,176 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 39842
+2020-04-26 15:09:22,543 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-26 15:09:25,000 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14362
+2020-04-26 15:24:45,465 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35022
+2020-04-26 15:24:45,725 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 15:24:47,499 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 39842
+2020-04-26 15:25:10,211 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35022
+2020-04-26 15:25:10,832 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 15:25:12,638 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 50305
+2020-04-26 15:26:04,435 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-26 15:26:04,725 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35022
+2020-04-26 15:26:05,245 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 15:26:22,168 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-26 15:26:22,513 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 105400
+2020-04-26 15:26:42,660 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 15:26:44,669 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 50293
+2020-04-26 15:27:38,398 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-26 15:27:38,765 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35022
+2020-04-26 15:27:39,143 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 15:27:40,410 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 50291
+2020-04-26 15:28:00,929 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-26 15:28:03,246 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14362
+2020-04-26 15:31:35,127 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35022
+2020-04-26 15:31:35,389 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 15:31:37,537 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 39842
+2020-04-26 15:32:04,289 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/project_list/1/ HTTP/1.1" 200 32518
+2020-04-26 15:32:26,652 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_config/ HTTP/1.1" 200 24749
+2020-04-26 15:51:40,395 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35022
+2020-04-26 15:51:41,343 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 15:51:43,041 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 50291
+2020-04-26 15:59:34,339 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14362
+2020-04-26 16:00:07,136 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_case/ HTTP/1.1" 200 34493
+2020-04-26 16:00:11,530 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35022
+2020-04-26 16:00:12,814 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 16:00:16,241 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 39842
+2020-04-26 16:00:35,997 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-26 16:00:36,441 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35022
+2020-04-26 16:00:37,340 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 16:00:40,513 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 39833
+2020-04-26 16:00:47,004 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 16:00:48,514 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 39833
+2020-04-26 16:00:52,828 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 16:00:56,660 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-26 16:00:57,071 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 102855
+2020-04-26 16:04:55,817 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-26 16:04:55,957 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 103102
+2020-04-26 16:04:56,065 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-26 16:04:56,371 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-26 16:14:30,380 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/log_out/ HTTP/1.1" 302 0
+2020-04-26 16:14:30,387 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-26 16:14:36,780 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2020-04-26 16:14:37,028 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18299
+2020-04-26 16:14:41,225 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35019
+2020-04-26 16:14:41,507 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 16:14:47,933 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-26 16:14:48,059 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 103349
+2020-04-26 16:15:25,659 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 16:15:28,940 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 39830
+2020-04-26 16:15:45,521 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-26 16:15:45,821 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35019
+2020-04-26 16:15:46,066 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 16:15:50,500 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-26 16:15:50,632 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 103612
+2020-04-26 16:19:45,146 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 16:19:46,697 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14187
+2020-04-26 16:19:48,947 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14362
+2020-04-26 16:42:43,969 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14187
+2020-04-26 16:42:46,361 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14362
+2020-04-26 17:05:53,064 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35019
+2020-04-26 17:05:53,344 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 17:05:55,195 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 39838
+2020-04-26 17:05:57,522 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 17:06:02,034 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-26 17:06:02,277 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 102193
+2020-04-26 17:06:20,881 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 17:06:24,898 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-26 17:06:25,146 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 102193
+2020-04-26 17:06:40,165 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 17:30:05,913 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 39838
+2020-04-26 17:30:20,378 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-26 17:30:20,974 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35019
+2020-04-26 17:30:21,281 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 17:30:25,421 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 28530
+2020-04-26 17:38:35,675 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 17:38:38,349 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 39840
+2020-04-26 17:38:50,319 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 17:40:32,440 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 28530
+2020-04-26 17:40:36,029 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 17:40:36,915 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 50288
+2020-04-26 17:40:39,244 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 17:41:49,854 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-26 17:41:53,683 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 104975
+2020-04-26 18:01:52,309 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 18:01:53,633 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 50288
+2020-04-26 18:01:55,093 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 18:08:01,723 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-26 18:08:01,968 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 104902
+2020-04-26 18:08:11,337 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 18:10:24,960 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 18:10:59,460 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 19:37:54,305 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-26 19:37:56,105 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 104902
+2020-04-26 19:38:20,557 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-26 19:38:26,753 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14187
+2020-04-26 19:38:28,756 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14362
+2020-04-27 13:02:04,277 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-27 13:02:04,358 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-27 13:02:04,737 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-27 13:02:05,719 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2020-04-27 13:02:06,224 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-27 13:02:10,820 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-27 13:02:13,736 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35023
+2020-04-27 13:02:13,977 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:02:15,656 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 50324
+2020-04-27 13:02:20,350 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:03:02,512 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-27 13:03:03,686 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 102126
+2020-04-27 13:03:06,989 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:05:23,697 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-27 13:05:25,513 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 105275
+2020-04-27 13:05:57,064 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:09:38,720 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-27 13:09:40,519 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 105275
+2020-04-27 13:11:39,612 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:14:34,839 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:14:56,962 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-27 13:14:57,196 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 105275
+2020-04-27 13:15:09,778 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:15:15,698 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-27 13:15:15,933 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 105275
+2020-04-27 13:15:41,733 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:16:35,345 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-27 13:16:35,593 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 105275
+2020-04-27 13:16:37,574 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:18:03,791 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:18:16,245 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-27 13:18:16,482 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 105416
+2020-04-27 13:19:28,310 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:19:29,007 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-27 13:19:29,286 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 105423
+2020-04-27 13:23:01,565 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:24:26,236 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:26:28,237 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:28:03,461 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:29:49,548 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:34:38,012 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35023
+2020-04-27 13:34:38,289 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:38:36,439 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-27 13:38:36,738 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 105402
+2020-04-27 13:43:20,749 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:43:22,295 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-27 13:43:22,578 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 105244
+2020-04-27 13:44:44,215 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:44:44,755 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 236, in run_test
+    run_test_by_type(id, base_url, testcase_dir_path, type)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\utils\runner.py", line 172, in run_test_by_type
+    run_by_single(id, base_url, path)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\utils\runner.py", line 54, in run_by_single
+    sys.path.append(testcase_dir_path, 'debugtalk.py')
+TypeError: append() takes exactly one argument (2 given)
+2020-04-27 13:44:45,000 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 103045
+2020-04-27 13:45:27,455 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:45:27,546 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-27 13:45:27,800 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 105258
+2020-04-27 13:58:10,445 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 13:59:11,833 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-27 13:59:13,612 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 105258
+2020-04-27 14:00:21,929 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 14:00:24,219 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-27 14:00:24,337 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 103456
+2020-04-27 14:02:51,107 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 14:04:57,823 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-27 14:04:59,610 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 105258
+2020-04-27 14:05:37,466 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 14:12:50,410 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 14:15:03,228 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-27 14:15:03,456 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 105258
+2020-04-27 14:22:29,128 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 14:23:45,743 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-27 14:23:47,589 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 105258
+2020-04-27 14:25:27,446 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 14:25:28,497 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-27 14:25:29,954 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14423
+2020-04-27 14:25:40,100 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/debugtalk/ HTTP/1.1" 302 0
+2020-04-27 14:25:40,385 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-27 14:25:47,131 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35023
+2020-04-27 14:25:47,373 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 14:26:45,157 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-27 14:26:46,335 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 105358
+2020-04-27 14:27:39,408 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 14:28:49,386 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-27 14:28:49,521 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 105950
+2020-04-27 14:28:59,245 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 237, in run_test
+    runner.run(testcase_dir_path)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 336, in run
+    return self.run_path(path_or_tests, dot_env_path, mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 318, in run_path
+    return self.run_tests(tests_mapping)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\httprunner\api.py", line 232, in run_tests
+    raise exceptions.ParseTestsFailure
+httprunner.exceptions.ParseTestsFailure
+2020-04-27 14:28:59,393 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 106050
+2020-04-27 14:28:59,479 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 59
+2020-04-27 14:30:01,758 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 14:31:17,502 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 18:30:27,358 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 302 0
+2020-04-27 18:30:27,375 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-27 18:30:33,835 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2020-04-27 18:30:34,359 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-27 18:30:37,990 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35023
+2020-04-27 18:30:38,315 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 18:36:20,273 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 18:36:23,958 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 28520
+2020-04-27 18:48:55,351 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 242, in run_test
+    return render_to_response('report_template.html', runner._summary)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\shortcuts.py", line 27, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 202, in render
+    .format(num_loopvars, len_item),
+ValueError: Need 2 values to unpack in for loop; got 3. 
+2020-04-27 18:48:57,843 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 361124
+2020-04-27 18:48:58,032 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-27 18:48:58,048 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-27 18:56:39,489 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 18:56:44,199 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 39841
+2020-04-27 18:56:45,979 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 18:56:48,499 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 242, in run_test
+    return render_to_response('report_template.html', runner._summary)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\shortcuts.py", line 27, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 202, in render
+    .format(num_loopvars, len_item),
+ValueError: Need 2 values to unpack in for loop; got 3. 
+2020-04-27 18:56:48,809 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 361282
+2020-04-27 19:21:37,179 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 242, in run_test
+    return render_to_response('report_template.html', runner._summary)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\shortcuts.py", line 27, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 202, in render
+    .format(num_loopvars, len_item),
+ValueError: Need 2 values to unpack in for loop; got 1. 
+2020-04-27 19:21:37,598 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 451723
+2020-04-27 19:21:37,841 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-27 19:21:37,851 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-27 19:41:33,771 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 242, in run_test
+    return render_to_response('report_template.html', runner._summary)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\shortcuts.py", line 27, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 202, in render
+    .format(num_loopvars, len_item),
+ValueError: Need 2 values to unpack in for loop; got 1. 
+2020-04-27 19:41:34,132 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 456533
+2020-04-27 19:41:34,366 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-27 19:41:34,372 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-27 19:42:30,953 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 292571
+2020-04-27 19:42:31,117 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-27 19:42:31,123 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-27 19:51:54,923 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 242, in run_test
+    return render_to_response('report_template.html', runner._summary)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\shortcuts.py", line 27, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 815, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 815, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 956, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 815, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 956, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 815, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 956, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 956, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 805, in do_for
+    " 'for x in y': %s" % token.contents)
+django.template.exceptions.TemplateSyntaxError: 'for' statements should use the format 'for x in y': for header_key,header_value in url.request.headers | cut:"\n  "
+2020-04-27 19:51:55,322 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 303973
+2020-04-27 19:51:55,470 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-27 19:51:55,477 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-27 19:52:35,533 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 242, in run_test
+    return render_to_response('report_template.html', runner._summary)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\shortcuts.py", line 27, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 202, in render
+    .format(num_loopvars, len_item),
+ValueError: Need 2 values to unpack in for loop; got 3. 
+2020-04-27 19:52:35,848 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 362440
+2020-04-27 19:52:35,969 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-27 19:52:35,974 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-27 19:57:34,246 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-27 19:57:37,232 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 242, in run_test
+    return render_to_response('report_template.html', runner._summary)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\shortcuts.py", line 27, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 202, in render
+    .format(num_loopvars, len_item),
+ValueError: Need 2 values to unpack in for loop; got 3. 
+2020-04-27 19:57:39,177 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 335621
+2020-04-27 20:11:00,224 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 242, in run_test
+    return render_to_response('report_template.html', eval(json.dumps(runner._summary)))
+  File "<string>", line 1, in <module>
+NameError: name 'true' is not defined
+2020-04-27 20:11:00,462 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 90191
+2020-04-27 20:11:00,564 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-27 20:11:00,568 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-28 08:58:01,395 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-28 08:58:02,951 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2020-04-28 08:58:03,295 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-28 08:58:07,156 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35023
+2020-04-28 08:58:07,742 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 08:58:12,057 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 242, in run_test
+    return render_to_response('report_template.html', eval(json.dumps(runner._summary)))
+  File "<string>", line 1, in <module>
+NameError: name 'true' is not defined
+2020-04-28 08:58:14,854 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 89890
+2020-04-28 08:59:22,569 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 09:00:40,025 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 242, in run_test
+    print(type(runner._summary))
+TypeError: 'str' object is not callable
+2020-04-28 09:00:40,239 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 86578
+2020-04-28 09:58:42,617 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 242, in run_test
+    return render_to_response('report_template.html', runner._summary)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\shortcuts.py", line 27, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 202, in render
+    .format(num_loopvars, len_item),
+ValueError: Need 2 values to unpack in for loop; got 3. 
+2020-04-28 09:58:43,114 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 335154
+2020-04-28 09:58:43,261 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-28 09:58:43,361 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-28 10:27:00,623 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 475, in parse
+    compile_func = self.tags[command]
+KeyError: 'endif'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 242, in run_test
+    return render_to_response('report_template.html', runner._summary)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\shortcuts.py", line 27, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 815, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 815, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 956, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 815, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 956, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 483, in parse
+    raise self.error(token, e)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 481, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 815, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 477, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 533, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 334: 'endif', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+2020-04-28 10:27:01,034 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 273911
+2020-04-28 10:27:01,548 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-28 10:27:01,799 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-28 10:27:37,885 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 242, in run_test
+    return render_to_response('report_template.html', runner._summary)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\shortcuts.py", line 27, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 202, in render
+    .format(num_loopvars, len_item),
+ValueError: Need 2 values to unpack in for loop; got 3. 
+2020-04-28 10:27:38,192 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 335598
+2020-04-28 10:27:38,293 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-28 10:27:38,299 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-28 10:31:25,826 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+  File "E:/myfiles/httprunnermanager/github/HttpRunnerNewManager\ApiManager\views.py", line 242, in run_test
+    return render_to_response('report_template.html', runner._summary)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\shortcuts.py", line 27, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 314, in render
+    return nodelist.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 910, in render_annotated
+    return self.render(context)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\defaulttags.py", line 202, in render
+    .format(num_loopvars, len_item),
+ValueError: Need 2 values to unpack in for loop; got 3. 
+2020-04-28 10:31:26,158 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/run_test/ HTTP/1.1" 500 335792
+2020-04-28 10:31:26,294 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-28 10:31:26,299 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-28 10:46:06,941 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 35168
+2020-04-28 10:46:07,185 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-28 10:46:07,192 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-28 10:47:43,356 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 10:47:49,036 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 35040
+2020-04-28 10:47:58,896 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 10:49:33,981 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 35749
+2020-04-28 10:55:27,148 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36027
+2020-04-28 10:55:27,242 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-28 10:55:27,249 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-28 10:57:35,947 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36083
+2020-04-28 10:57:36,046 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-28 10:57:36,056 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-28 10:57:51,261 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36083
+2020-04-28 10:57:51,340 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-28 10:57:51,347 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-28 11:03:13,898 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36129
+2020-04-28 11:03:13,981 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-28 11:03:13,987 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-28 11:05:11,182 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36130
+2020-04-28 11:05:11,286 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-28 11:05:11,293 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-28 11:07:37,427 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36109
+2020-04-28 11:07:37,586 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-28 11:07:37,597 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-28 11:08:10,312 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36084
+2020-04-28 11:08:10,474 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-28 11:08:10,485 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-28 11:09:40,190 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36082
+2020-04-28 11:09:40,336 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-28 11:09:40,346 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-28 11:10:10,725 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36073
+2020-04-28 11:10:10,881 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-28 11:10:10,887 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-28 11:10:46,415 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36016
+2020-04-28 11:10:46,557 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-04-28 11:10:46,569 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-04-28 11:17:22,098 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 11:17:24,153 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 50324
+2020-04-28 11:17:54,672 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-28 11:17:58,329 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-28 11:17:59,963 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14371
+2020-04-28 11:19:38,649 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-28 11:19:41,198 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 35023
+2020-04-28 11:19:41,459 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 11:19:43,593 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 50324
+2020-04-28 11:19:45,401 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 11:19:48,940 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36016
+2020-04-28 11:20:10,367 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 11:20:11,586 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 50324
+2020-04-28 11:21:54,729 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-28 11:21:56,705 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-28 11:22:00,679 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14371
+2020-04-28 11:24:12,978 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14371
+2020-04-28 11:44:00,742 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 37504
+2020-04-28 11:44:01,087 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 11:44:03,089 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 39841
+2020-04-28 11:44:07,278 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 11:44:11,626 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36215
+2020-04-28 11:48:07,514 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 11:48:10,209 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 50324
+2020-04-28 13:37:04,398 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 14371
+2020-04-28 13:37:22,363 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/debugtalk/ HTTP/1.1" 302 0
+2020-04-28 13:37:22,458 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-28 13:37:26,365 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 37504
+2020-04-28 13:37:26,675 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 13:37:28,995 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 50324
+2020-04-28 13:37:36,945 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-28 13:37:38,574 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 15502
+2020-04-28 13:38:44,160 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/debugtalk/ HTTP/1.1" 302 0
+2020-04-28 13:38:44,275 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-28 13:39:47,074 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-28 13:39:47,368 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 37504
+2020-04-28 13:39:47,652 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 13:39:52,001 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36016
+2020-04-28 13:40:48,643 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 13:40:58,288 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 50317
+2020-04-28 13:59:17,416 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 37504
+2020-04-28 13:59:18,199 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 13:59:21,560 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 35880
+2020-04-28 13:59:39,997 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 37504
+2020-04-28 13:59:40,393 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 13:59:43,566 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-28 13:59:45,041 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 15543
+2020-04-28 14:02:05,281 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/debugtalk/ HTTP/1.1" 302 0
+2020-04-28 14:02:05,437 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-28 14:02:08,211 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 14:02:13,375 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36016
+2020-04-28 14:03:23,589 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 15573
+2020-04-28 14:06:02,055 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 37504
+2020-04-28 14:06:02,558 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 14:06:05,309 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 50317
+2020-04-28 14:08:16,183 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-28 14:08:16,473 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 37504
+2020-04-28 14:08:16,775 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 14:08:20,454 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36015
+2020-04-28 14:09:11,610 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 14:09:16,483 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 49380
+2020-04-28 14:09:27,268 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-28 14:09:30,810 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 15573
+2020-04-28 14:10:23,904 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 14:10:26,091 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 49380
+2020-04-28 14:11:50,308 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-28 14:11:50,531 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 37504
+2020-04-28 14:11:50,813 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 14:11:54,517 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36190
+2020-04-28 14:12:27,129 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 14:12:28,606 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 49439
+2020-04-28 16:01:14,725 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 37504
+2020-04-28 16:01:15,262 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 16:01:35,179 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36285
+2020-04-28 16:06:41,514 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 15573
+2020-04-28 16:06:44,406 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 16:06:45,589 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 49380
+2020-04-28 16:07:03,455 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-28 16:07:03,715 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 37504
+2020-04-28 16:07:03,989 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 16:07:07,893 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36285
+2020-04-28 16:07:49,991 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 16:07:53,255 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36284
+2020-04-28 16:09:20,062 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 16:09:22,896 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36284
+2020-04-28 16:10:12,619 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 16:10:13,979 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/4/ HTTP/1.1" 200 50324
+2020-04-28 16:10:48,075 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-28 16:10:49,565 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 15573
+2020-04-28 16:19:18,169 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/debugtalk/ HTTP/1.1" 302 0
+2020-04-28 16:19:18,308 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-28 16:21:34,959 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/edit_case/ HTTP/1.1" 200 17
+2020-04-28 16:21:35,220 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 37504
+2020-04-28 16:21:35,546 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 16:21:40,273 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36286
+2020-04-28 16:22:10,402 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 302 0
+2020-04-28 16:22:10,413 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-28 16:22:13,117 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2020-04-28 16:22:13,388 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-28 16:22:15,759 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-28 16:22:18,570 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_module/ HTTP/1.1" 200 16254
+2020-04-28 16:22:20,186 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 37504
+2020-04-28 16:22:20,435 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 16:22:23,973 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36284
+2020-04-28 16:22:33,213 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 16:22:46,490 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-28 16:22:55,413 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 37504
+2020-04-28 16:22:55,682 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 16:22:59,009 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 33655
+2020-04-28 16:23:06,787 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-28 16:23:08,396 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 15923
+2020-04-28 16:25:38,354 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/debugtalk/ HTTP/1.1" 302 0
+2020-04-28 16:25:38,400 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/debugtalk/ HTTP/1.1" 302 0
+2020-04-28 16:25:38,435 [django.server:124] [basehttp:log_message] [ERROR]- "POST /api/debugtalk/ HTTP/1.1" 500 59
+2020-04-28 16:25:38,472 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-28 16:25:47,646 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 15912
+2020-04-28 16:25:50,165 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 16:25:55,183 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 33597
+2020-04-28 16:26:02,988 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 16:26:16,672 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 33679
+2020-04-28 16:26:27,524 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 15912
+2020-04-28 16:29:27,665 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/debugtalk/ HTTP/1.1" 302 0
+2020-04-28 16:29:27,853 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-28 16:29:30,213 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 16:29:33,774 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 33632
+2020-04-28 16:29:43,390 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 16:29:44,242 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36286
+2020-04-28 16:50:16,450 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 16:50:19,307 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 36286
+2020-04-28 16:50:30,191 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-28 16:50:32,676 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 15915
+2020-04-28 18:40:35,744 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-04-28 18:40:37,036 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2020-04-28 18:40:37,314 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-04-28 18:40:40,596 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 37504
+2020-04-28 18:40:40,942 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-04-28 18:40:46,253 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14190
+2020-04-28 18:40:47,663 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 15915

@@ -168,7 +168,7 @@ def add_case(request):
     """
     新增用例
     :param request:
-    :return:
+    :return:r
     """
     account = request.session["now_account"]
     if request.is_ajax():
@@ -217,7 +217,7 @@ def run_test(request):
     runner = HttpRunner(**kwargs)
 
     testcase_dir_path = os.path.join(os.getcwd(), "suite")
-    testcase_dir_path = os.path.join(testcase_dir_path, get_time_stamp())
+    testcase_dir_path = os.path.join(testcase_dir_path, get_time_stamp().replace(" ",""))
 
     if request.is_ajax():
         kwargs = json.loads(request.body.decode('utf-8'))
@@ -281,7 +281,6 @@ def run_batch_test(request):
         shutil.rmtree(testcase_dir_path)
         runner._summary = timestamp_to_datetime(runner._summary,type=False)
         runner._summary['base_url'] = base_url
-        print(runner._summary)
         return render_to_response('report_template.html', runner._summary)
 
 

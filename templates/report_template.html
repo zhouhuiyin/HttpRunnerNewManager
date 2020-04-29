@@ -300,6 +300,9 @@
                                             </tr>
                                             </thead>
                                             <tbody>
+											<tr >
+												   <td  colspan="3" align="left" width="80" style="color:#00FFFF;"><b>Request</b></td>
+											</tr>
                                             <tr class='info' status='info'>
                                                 <td class='status info' title='info' alt='info'><i
                                                         class='material-icons'>low_priority</i></td>
@@ -318,28 +321,24 @@
                                                 <td class='timestamp'>status_code</td>
                                                 <td class='step-details'>{{ url.response.status_code }}</td>
                                             </tr>
-                                            {% for key, value in record.meta_data.request.items %}
-                                                {% if key != 'url' and key != 'method' and key != 'start_timestamp' %}
+                                            {% for key,value in url.request.items %}
+                                                {% if key != 'url' and key != 'method' %}
                                                     <tr class='log' status='debug'>
                                                         <td class='status debug' title='debug' alt='debug'><i
                                                                 class='material-icons'>low_priority</i></td>
                                                         <td class='timestamp'>{{ key }}</td>
                                                         <td class='step-details'>
-                                                            {% if key == "headers" %}
-                                                                {% for header_key, header_value in record.meta_data.request.headers.items %}
                                                                     <div>
-                                                                        <strong>{{ header_key }}</strong>: {{ header_value }}
+                                                                        <strong>{{ value }}</strong>
                                                                     </div>
-                                                                {% endfor %}
-                                                            {% else %}
-                                                                {{ value }}
-                                                            {% endif %}
                                                         </td>
                                                     </tr>
                                                 {% endif %}
                                             {% endfor %}
-
-                                            {% for key, value in record.meta_data.response.items %}
+											<tr >
+												    <td colspan="3" align="left" width="80" style="color: #00FFFF;"><b>Response</b></td>
+											</tr>
+                                            {% for key,value in url.response.items %}
                                                 {% if key != "content" and key != "json" and key != "elapsed_ms" and key != "response_time_ms" and key != "content_size" and key != "content_type" and key != "status_code" and key != "reason" and key != "ok" and key != "encoding" and key != "url" %}
                                                     <tr class='log' status='debug'>
                                                         <td class='status debug' title='debug' alt='debug'><i
@@ -347,13 +346,11 @@
                                                         <td class='timestamp'>{{ key }}</td>
                                                         <td class='step-details'>
                                                             {% if key == "headers" %}
-                                                                {% for header_key, header_value in record.meta_data.response.headers.items %}
                                                                     <div>
-                                                                        <strong>{{ header_key }}</strong>: {{ header_value }}
+                                                                        <strong>{{ value }}</strong>
                                                                     </div>
-                                                                {% endfor %}
                                                             {% elif key == "text" %}
-                                                                {% if  record.meta_data.response.content_type == 'image' %}
+                                                                {% if  url.response.content_type == 'image' %}
                                                                     <img src="{{ record.meta_data.response.content }}"/>
                                                                 {% else %}
                                                                     <pre>{{ record.meta_data.response.text }}</pre>

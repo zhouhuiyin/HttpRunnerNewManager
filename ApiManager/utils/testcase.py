@@ -31,3 +31,8 @@ def _dump_json_file(json_file, data):
 def dump_python_file(python_file, data):
     with io.open(python_file, 'w', encoding='utf-8') as stream:
         stream.write(data)
+    # 使用传统方式写文件
+    # f = open(python_file, 'w')
+    # f.write(data)
+    # f.close()
+

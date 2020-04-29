@@ -1,5 +1,5 @@
 import os
-
+import sys
 from django.core.exceptions import ObjectDoesNotExist
 
 from ApiManager.models import TestCaseInfo, ModuleInfo, ProjectInfo, DebugTalk, TestSuite
@@ -50,7 +50,11 @@ def run_by_single(index, base_url, path):
         except ObjectDoesNotExist:
             debugtalk = ''
 
-        dump_python_file(os.path.join(testcase_dir_path, 'debugtalk.py'), debugtalk)
+
+        dump_python_file(os.path.join(path, 'debugtalk.py'), debugtalk)
+        sys.path.append(os.path.join(testcase_dir_path, 'debugtalk.py'))
+
+
 
     testcase_dir_path = os.path.join(testcase_dir_path, module)
 
