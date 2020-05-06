@@ -2,3 +2,5 @@
 /reports/
 mysqlclient-1.4.6-cp35-none-win_amd64.whl
 httprunner-3.0.1.1-py3-none-any.whl
+/.idea/
+/logs/
