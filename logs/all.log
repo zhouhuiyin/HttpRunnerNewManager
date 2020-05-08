@@ -5892,3 +5892,214 @@ httprunner.exceptions.ParseTestsFailure
 2020-05-06 14:35:51,746 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
 2020-05-06 14:35:55,596 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 35484
 2020-05-06 14:38:50,232 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2020-05-08 15:17:33,229 [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 302 0
+2020-05-08 15:17:33,252 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3876
+2020-05-08 15:17:33,275 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/iconfont/style.css HTTP/1.1" 304 0
+2020-05-08 15:17:33,277 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpg HTTP/1.1" 304 0
+2020-05-08 15:17:33,278 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/main_bg.png HTTP/1.1" 304 0
+2020-05-08 15:17:33,333 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/iconfont/fonts/icomoon.ttf?u4m6fy HTTP/1.1" 304 0
+2020-05-08 15:17:34,793 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2020-05-08 15:17:35,060 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-05-08 15:18:01,770 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 13
+2020-05-08 15:44:11,265 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1 HTTP/1.1" 301 0
+2020-05-08 15:44:11,277 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/index1/
+Traceback (most recent call last):
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\HttpRunnerManager\activator.py", line 13, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'index1'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 475, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\HttpRunnerManager\activator.py", line 19, in process
+    return render_to_response('404.html')
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\shortcuts.py", line 27, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 477, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 539, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 2: 'static'. Did you forget to register or load this tag?
+2020-05-08 15:44:14,244 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/index1/ HTTP/1.1" 500 137075
+2020-05-08 15:48:14,277 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/index1/
+Traceback (most recent call last):
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\HttpRunnerManager\activator.py", line 13, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'index1'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 475, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\HttpRunnerManager\activator.py", line 19, in process
+    return render_to_response('404.html')
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\shortcuts.py", line 27, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 160, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 198, in compile_nodelist
+    return parser.parse()
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 477, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 539, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 3: 'static'. Did you forget to register or load this tag?
+2020-05-08 15:48:14,447 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/index1/ HTTP/1.1" 500 137409
+2020-05-08 15:48:14,595 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 15:48:14,608 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 15:52:25,772 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1254
+2020-05-08 15:54:41,348 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 15:57:42,165 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1295
+2020-05-08 15:57:45,714 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index HTTP/1.1" 301 0
+2020-05-08 15:57:45,915 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-05-08 15:57:49,640 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18302
+2020-05-08 15:57:56,770 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1295
+2020-05-08 15:57:56,790 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 15:57:56,796 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 15:57:58,192 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1295
+2020-05-08 15:57:58,209 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 15:57:58,214 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 15:57:59,195 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1295
+2020-05-08 15:57:59,214 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 15:57:59,219 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:04:09,240 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1318
+2020-05-08 16:04:09,257 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:04:09,261 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:04:49,473 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1367
+2020-05-08 16:04:49,494 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:04:49,501 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:04:52,406 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1367
+2020-05-08 16:04:52,424 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:04:52,429 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:04:53,051 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1367
+2020-05-08 16:04:53,067 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:04:53,072 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:04:53,554 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1367
+2020-05-08 16:04:53,570 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:04:53,574 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:05:27,119 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1367
+2020-05-08 16:05:27,136 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:05:27,141 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:05:28,691 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1367
+2020-05-08 16:05:28,707 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:05:28,711 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:05:29,710 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1367
+2020-05-08 16:05:29,726 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:05:29,731 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:05:30,341 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1367
+2020-05-08 16:05:30,357 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:05:30,361 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:05:30,811 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1367
+2020-05-08 16:05:30,827 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:05:30,832 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:05:31,656 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1367
+2020-05-08 16:05:31,670 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:05:31,675 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:09:06,717 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1367
+2020-05-08 16:09:06,733 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:09:06,739 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:09:07,738 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1367
+2020-05-08 16:09:07,754 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:09:07,758 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:09:38,516 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1454
+2020-05-08 16:09:38,533 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:09:38,538 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:10:01,782 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1454
+2020-05-08 16:10:01,806 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:10:01,812 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:10:50,747 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1460
+2020-05-08 16:10:50,765 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:10:50,772 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:10:51,575 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1460
+2020-05-08 16:10:51,596 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:10:51,602 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:11:26,285 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1461
+2020-05-08 16:11:26,305 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:11:26,310 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:12:25,068 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1461
+2020-05-08 16:12:25,088 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:12:25,092 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:12:25,749 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1461
+2020-05-08 16:12:25,768 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:12:25,773 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:13:45,798 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1454
+2020-05-08 16:13:45,816 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:13:45,823 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:15:30,356 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1485
+2020-05-08 16:15:30,373 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:15:30,377 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:20:19,268 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1449
+2020-05-08 16:20:19,286 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:20:19,290 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:20:20,269 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1449
+2020-05-08 16:20:20,283 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:20:20,288 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:20:33,261 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1485
+2020-05-08 16:20:33,278 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:20:33,283 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:20:42,785 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1484
+2020-05-08 16:20:42,801 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:20:42,806 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:20:52,987 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1485
+2020-05-08 16:20:53,004 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:20:53,010 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:23:00,945 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index1/ HTTP/1.1" 200 1505
+2020-05-08 16:23:00,962 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2020-05-08 16:23:00,967 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2020-05-08 16:27:02,592 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_case/ HTTP/1.1" 200 34493
+2020-05-08 16:27:10,204 [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 18302
+2020-05-08 16:27:14,554 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 14189
+2020-05-08 16:27:20,077 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_module/ HTTP/1.1" 200 16254

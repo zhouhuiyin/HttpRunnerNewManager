@@ -1,3 +1,4 @@
+from django.shortcuts import render_to_response
 
 def process(request, **kwargs):
     app = kwargs.pop('app', None)
@@ -14,6 +15,7 @@ def process(request, **kwargs):
         # 执行view.py中的函数，并获取其返回值
         result = fun(request, index) if index else fun(request)
     except (ImportError, AttributeError):
-        raise
+        #未找到对应的方法，返回404
+        return render_to_response('404.html')
 
     return result
