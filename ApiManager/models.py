@@ -125,3 +125,13 @@ class TestSuite(BaseTable):
     belong_project = models.ForeignKey(ProjectInfo, on_delete=models.CASCADE)
     suite_name = models.CharField(max_length=100, null=False)
     include = models.TextField(null=False)
+
+class SshInfo(BaseTable):
+    class Meta:
+        verbose_name = 'ssh信息'
+        db_table = 'SshInfo'
+
+    ip = models.CharField(max_length=20, null=False, unique=True)
+    port = models.IntegerField(null=True, default=22)
+    login_user = models.CharField(max_length=20, null=False)
+    password = models.CharField(max_length=64, null=False)

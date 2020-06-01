@@ -3292,3 +3292,30 @@ Traceback (most recent call last):
   File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\template\base.py", line 539, in invalid_block_tag
     "or load this tag?" % (token.lineno, command)
 django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 3: 'static'. Did you forget to register or load this tag?
+2020-05-08 16:28:03,771 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/add_module/a/
+Traceback (most recent call last):
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\myfiles\pythonvirtualenv\httprunnerenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\HttpRunnerManager\activator.py", line 16, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\myfiles\httprunnermanager\github\HttpRunnerNewManager\ApiManager\views.py", line 39, in wrapper
+    return func(request, *args, **kwargs)
+TypeError: add_module() takes 1 positional argument but 2 were given
+2020-05-09 15:14:58,611 [HttpRunnerManager:55] [views:login] [INFO]- chenjinsong 登录成功
+2020-05-11 09:50:59,178 [HttpRunnerManager:55] [views:login] [INFO]- chenjinsong 登录成功
+2020-05-13 17:01:04,365 [HttpRunnerManager:55] [views:login] [INFO]- chenjinsong 登录成功
+2020-05-21 19:53:21,437 [HttpRunnerManager:35] [operation:add_register_data] [INFO]- 新增用户：ApiManager.UserInfo.objects
+2020-05-21 19:53:37,572 [HttpRunnerManager:60] [views:login] [INFO]- zhangyi0@yovole.com 登录失败, 请检查用户名或者密码
+2020-05-21 19:53:45,749 [HttpRunnerManager:55] [views:login] [INFO]- zhangyi 登录成功
+2020-05-21 19:54:18,801 [HttpRunnerManager:55] [views:login] [INFO]- chenjinsong 登录成功
+2020-05-29 15:19:17,535 [HttpRunnerManager:60] [views:login] [INFO]- chenjinsong 登录失败, 请检查用户名或者密码
+2020-05-29 15:19:28,769 [HttpRunnerManager:55] [views:login] [INFO]- chenjinsong 登录成功
+2020-05-29 15:19:54,954 [HttpRunnerManager:89] [views:log_out] [INFO]- chenjinsong退出
+2020-05-29 15:22:56,262 [HttpRunnerManager:60] [views:login] [INFO]- chenjinsong 登录失败, 请检查用户名或者密码
+2020-05-29 15:23:02,696 [HttpRunnerManager:60] [views:login] [INFO]- chenjinsong 登录失败, 请检查用户名或者密码
+2020-06-01 15:47:28,226 [HttpRunnerManager:60] [views:login] [INFO]- chenjinsong 登录失败, 请检查用户名或者密码
+2020-06-01 15:47:36,876 [HttpRunnerManager:55] [views:login] [INFO]- chenjinsong 登录成功
