@@ -1,7 +1,7 @@
 PyYAML == 5.3.1
 eventlet == 0.22.1
 django-celery == 3.2.2
-flower == 0.9.2
+flower == 1.2.0
 dwebsocket == 0.4.2
 paramiko == 2.4.2
 httprunner == 3.0.1
